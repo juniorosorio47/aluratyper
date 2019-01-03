@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="frase center" >Lorem sit t ducimus praesentium esse voluptates, cumque laudantium officiis odio nulla voluptatibus velit voluptas nobis perspiciatis? Necessitatibus deserunt earum delectus esse. Fugiat, illum?</p>
+
+        <ul class="informacoes center">
+            <li>
+                <i class="small material-icons icones">format_color_text</i>
+                <span id="tamanhoFrase"></span> palavras
+            </li>
+            <li id="tempo">
+                <i class="small material-icons icones">access_time</i>
+                <span id="tempoFrase">5</span> segundos
+            </li>
+        </ul>
+
+        <textarea class="campoDigitacao" cols="30" rows="10"></textarea>
+
+        <div class="botoes">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="reiniciar"><i class="material-icons">history</i></a>
+        </div>
+
+        <ul class="center">
+            <li><span id="contadorCaracteres">0</span> caracteres</li>
+            <li><span id="contadorPalavras">0</span> palavras</li>
+        </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="highlight center centered">
+                <thead>
+                    <th>Nome</th>
+                    <th>Número de Palavras</th>
+                    <th>Remover</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

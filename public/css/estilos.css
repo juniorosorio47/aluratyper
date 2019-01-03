@@ -1,0 +1,32 @@
+.frase{
+    font-size: 20px;
+}
+
+.campoDigitacao{
+    font-size: 20px;
+    height: 150px;
+    border-radius: 10px;
+    border: solid 2px;
+}
+
+.bordaVerde{
+    border-color: green;
+}
+
+.bordaVermelha{
+    border-color: red;
+}
+
+.acabou{
+    background: gray;
+    color: lightgray;
+}
+
+.icones{
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.botoes{
+    margin: 10px;
+}
