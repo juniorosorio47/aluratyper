@@ -46,8 +46,6 @@ function inicializaCronometro(){
 function finalizaJogo(){
     campo.attr("disabled", true);
     campo.addClass("acabou");
-    campo.removeClass("bordaVermelha");
-    campo.removeClass("bordaVerde");
     inserePlacar();
 }
 
@@ -66,26 +64,6 @@ function inicializaBordas(){
 }
 
 campo.on("input", inicializaBordas);
-
-function inserePlacar(){
-        var corpoTabela = $(".placar").find("tbody");
-        var numPalavras = $("#contadorPalavras").text();
-        var usuario = "Junior";
-        var botaoRemover = $("#botaoRemover");
-
-        var linha = "<tr>"+ 
-                        "<td>"+ usuario + "</td>"+
-                        "<td>"+ numPalavras + "</td>"+
-                        "<td><a href='#' id='botaoRemover'><i class='small material-icons icones'>delete</i></a></td>"
-                    "</tr>";
-
-        corpoTabela.append(linha);
-}
-
-function removePlacar(){
-    
-}
-
 
 function reiniciaJogo() {
     campo.attr("disabled", false);
