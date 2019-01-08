@@ -50,17 +50,19 @@ function finalizaJogo(){
 }
 
 function inicializaBordas(){
-    var frase = $(".frase").text();
-    var digitado = campo.val();
-    var comparavel = frase.substr(0, digitado.length);
+    campo.on("input", function(){
+        var frase = $(".frase").text();
+        var digitado = campo.val();
+        var comparavel = frase.substr(0, digitado.length);
 
-    if(digitado == comparavel){
-        campo.removeClass("bordaVermelha");
-        campo.addClass("bordaVerde");
-    }else{
-        campo.removeClass("bordaVerde");
-        campo.addClass("bordaVermelha");
-    }
+        if(digitado == comparavel){
+            campo.removeClass("bordaVermelha");
+            campo.addClass("bordaVerde");
+        }else{
+            campo.removeClass("bordaVerde");
+            campo.addClass("bordaVermelha");
+        }
+    });
 }
 
 campo.on("input", inicializaBordas);
@@ -75,4 +77,9 @@ function reiniciaJogo() {
     campo.removeClass("bordaVerde");
     campo.removeClass("bordaVermelha");
     inicializaCronometro();
+}
+
+function atualizaTempoInicial(tempo){
+    tempoInicial = tempo;
+    $("#tempoFrase").text(tempo);
 }

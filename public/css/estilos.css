@@ -39,5 +39,39 @@ body{
 
 .placar{
     display: none;
-    margin-top: 300px;
+    margin-top: 100px;
+}
+
+#erro{
+    background: #f8765f9c;
+    border-radius: 10px;
+    border: solid 2px #d91e18;
+    font-size: 18px;
+    font-weight: bold;
+    color: #96281b;
+    display: none;
+}
+
+#spinner{
+    display: none;
+}
+
+#idFrase{
+    width: 40px;
+    text-align: center;
+    margin-left: 10px;
+
+}
+
+.invisivel{
+    display: none;
+}
+
+.slider{
+    height: auto;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black;
+    font-size: 20px;
 }

@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Alura Typer</title>
-    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/libs/materialize.min.css">
     <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>   
+    <link rel="stylesheet" href="css/estilos.css">
     
 </head>
 <body>
     <div class="container">
         <h1 class="center">Alura Typer</h1>
         <p class="frase center" >Lorem sit t ducimus praesentium esse voluptates, cumque laudantium officiis odio nulla voluptatibus velit voluptas nobis perspiciatis? Necessitatibus deserunt earum delectus esse. Fugiat, illum?</p>
-
+        <div class="center">
+            <img src="img/spinner.gif" alt="#" id="spinner">
+        </div>
+        <div id="erro">
+            <p class="center">Ocorreu um erro, tente novamente</p>
+        </div>
         <ul class="informacoes center">
             <li>
                 <i class="small material-icons icones">format_color_text</i>
@@ -30,6 +37,8 @@
             <a class="btn-floating btn-large waves-effect waves-light red" id="reiniciar"><i class="material-icons">history</i></a>
             <a class="btn-floating btn-large waves-effect waves-light green" id="mostrarPlacar"><i class="material-icons">assignment</i></a>
             <a class="btn-floating btn-large waves-effect waves-light blue" id="trocarFrase"><i class="material-icons">shuffle</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light ciano" id="escolherFrase"><i class="material-icons">repeat_one</i></a>
+            <input type="number" id="idFrase" min="0">
         </div>
 
         <ul class="center">
@@ -37,6 +46,11 @@
             <li><span id="contadorPalavras">0</span> palavras</li>
         </ul>
 
+        <div class="slider">
+            <img src="img/slide1.png" alt="">
+            <img src="img/slide2.png" alt="">
+            <img src="img/slide3.png" alt="">
+        </div>
         <section class="placar">
             <h3 class="center">Placar</h3> 
             <table class="highlight center centered">
@@ -56,5 +70,9 @@
     <script src="js/main.js"></script>
     <script src="js/placar.js"></script>
     <script src="js/frase.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    
+				
 </body>
 </html>
